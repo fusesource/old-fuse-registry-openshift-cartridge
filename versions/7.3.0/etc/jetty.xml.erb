@@ -17,7 +17,7 @@ DTD Configure//EN" "http://jetty.mortbay.org/configure.dtd">
         <Arg>
             <New class="org.eclipse.jetty.server.nio.SelectChannelConnector">
                 <Set name="host">
-                    <Property name="jetty.host" default="<%= ENV['OPENSHIFT_FUSE_REGISTRY_IP'] %>"/>
+                    <SystemProperty name="bind.address" default="<%= ENV['OPENSHIFT_FUSE_REGISTRY_IP'] %>"/>
                 </Set>
                 <!-- default port will be overwritten by pax-web configuration -->
                 <Set name="port">
