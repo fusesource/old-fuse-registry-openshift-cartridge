@@ -60,8 +60,8 @@ echo "org.ops4j.pax.web.listening.addresses=\${zk:\${karaf.name}/bindaddress}" >
 cp container/etc/jetty.xml container/fabric/import/fabric/configs/versions/1.0/profiles/default/
 echo "org.osgi.service.http.connection.port=80" >> container/fabric/import/fabric/configs/versions/1.0/profiles/default/org.ops4j.pax.web.properties
 
-#add_domain_env_var "OPENSHIFT_FUSE_ZOOKEEPER_URL=${OPENSHIFT_GEAR_DNS}:${OPENSHIFT_FUSE_REGISTRY_ZOOKEEPER_PROXY_PORT}"
-#add_domain_env_var "OPENSHIFT_FUSE_ZOOKEEPER_PASSWORD=$password"
+add_domain_env_var "OPENSHIFT_FUSE_DOMAIN_ZOOKEEPER_URL=${OPENSHIFT_GEAR_DNS}:${OPENSHIFT_FUSE_REGISTRY_ZOOKEEPER_PROXY_PORT}"
+add_domain_env_var "OPENSHIFT_FUSE_DOMAIN_ZOOKEEPER_PASSWORD=$password"
 add_domain_env_var "MAVEN_UPLOAD_URL=${OPENSHIFT_GEAR_DNS}:${OPENSHIFT_FUSE_REGISTRY_HTTP_PORT}/maven/upload/"
 
 echo "$password" > container/etc/passwd
