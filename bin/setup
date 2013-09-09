@@ -20,7 +20,7 @@ echo "$version" > "$OPENSHIFT_FUSE_REGISTRY_DIR/env/OPENSHIFT_FUSE_REGISTRY_VERS
 #Download and extract the Fuse Fabric Distribution
 install_fabric
 
-if [ ! -z $OPENSHIFT_FUSE_ZOOKEEPER_PASSWORD ]; then
+if [ ! -z "$OPENSHIFT_FUSE_ZOOKEEPER_PASSWORD" ]; then
   password=$OPENSHIFT_FUSE_ZOOKEEPER_PASSWORD
 else 
   # generate password and setup env vars
