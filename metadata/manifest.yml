@@ -74,8 +74,8 @@ Endpoints:
     Private-Port:      8080
     Public-Port-Name:  HTTP_PROXY_PORT
     Mappings:
-      - Frontend:      "/app"
-        Backend:       "/hawtio"
+      - Frontend:      ""
+        Backend:       ""
   - Private-IP-Name:   IP
     Private-Port-Name: SHUTDOWN_PORT
     Private-Port:      15001
