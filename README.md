@@ -1,4 +1,3 @@
-# OpenShift Fuse Registry Cartridge
+# This repository is no longer used
 
-The Fuse Registry Cartridge provides a Fuse Fabric container, which host a Fabric Registry.
-The Fabric Registry can be used by application using the Fuse Cartridge.
+Plesae use [fuse-openshift-cartridge now](https://github.com/jboss-fuse/fuse-openshift-cartridge)
